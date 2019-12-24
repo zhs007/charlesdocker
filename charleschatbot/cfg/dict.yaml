@@ -1,0 +1,98 @@
+words:
+  - 治愈系
+  - 周年庆
+  - 圣诞帽
+  - 合作款
+  - 胡桃夹子
+  - 姜饼人
+  - 胡桃钳子
+  - 茶垢粉
+  - 杯套
+  - 随行杯
+  - 轻巧杯
+  - 泡茶杯
+  - 保温泡茶杯
+  - 杯刷
+  - 激光刻字
+  - 茶水分离
+  - 吸管杯
+  - 杯垫
+  - 搪瓷杯
+  - 不锈钢杯
+  - 糖果罐
+  - 焖烧罐
+  - 焖烧杯
+  - 冷水瓶
+  - 运动水瓶
+  - 猫爪杯
+  - 茶水分离
+  - 剃须泡
+
+color:
+  - 酒红色
+  - 荧光绿
+  - 深卡其布色
+  - 卡其布色
+  - 深酒红色
+  - 酒红色
+  - 巧克力色
+  - 浅灰色
+  - 明黄色
+  - 米白色
+  - 玫红色
+  - 酒红色
+  - 姜黄色
+  - 湖蓝色
+  - 黑灰色
+  - 黑
+  - 灰
+  - 粉
+  - 青
+  - 白色
+  - 黑色
+  - 灰色
+  - 粉色
+  - 蓝
+
+brand:
+  - mainname: 膳魔师
+    othername:
+      - 膳mo师
+  - mainname: Fun Home
+    othername:
+      - funhome
+      - fun home
+  - mainname: 平仄
+    othername:
+      - pinztea
+  - mainname: 米家
+    othername:
+      - 小米
+  - mainname: 吉列
+    othername:
+      - gillette
+
+brandpath: ./brand
+
+logistics:
+  - 顺丰包邮
+  - 顺丰
+  - 包邮
+
+stopwords:
+  - 现货
+  - 特价
+  - 收藏
+  - 加购
+  - （
+  - ）
+  - '-'
+
+separator:
+  - 送
+  - 【
+  - 】
+  - +
+  - /
+
+letterdigitex: "'&#@$%"

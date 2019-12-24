@@ -1,0 +1,25 @@
+brand: 吉列
+productmodel:
+  - mainname: 锋隐
+    othername:
+  - mainname: 致顺
+    othername:
+      - 锋隐致顺
+      - 致顺手动
+  - mainname: 锋速
+    othername:
+      - 锋速三
+  - mainname: 敏锐
+    othername:
+      - 锋速敏锐
+  - mainname: 威锋
+    othername:
+  - mainname: 冰酷
+    othername:
+      - 致护冰酷
+  - mainname: 致护
+    othername:
+      - 锋隐致护
+  - mainname: 云感
+    othername:
+      - 敏护

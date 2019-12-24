@@ -1,0 +1,121 @@
+search:
+  - fun home
+  - 保温
+  - 茶杯
+valuetype:
+skulist:
+  - mainname: 泡茶杯
+    othername:
+      - 保温泡茶杯
+    attributes:
+      - brand
+      - capacity
+      - color
+  - mainname: 杯刷
+    othername:
+      - 刷
+    attributes:
+    isgift: true
+  - mainname: 杯套
+    othername:
+      - 套
+      - 保护套
+    attributes:
+      - color
+    isgift: true
+    ischeap: true
+  - mainname: 茶垢粉
+    # 严格模式的其它名称，严格模式就是后面需要有间隔，譬如粉，单独看，可能是粉色
+    othernameex:
+      - 粉
+    attributes:
+    isgift: true
+    ischeap: true
+  - mainname: 随行杯
+    othername:
+      - 轻巧杯
+    attributes:
+      - brand
+      - capacity
+      - color
+    isgift: false
+  - mainname: 保温杯
+    othername:
+    attributes:
+      - brand
+      - capacity
+      - color
+  - mainname: 水壶
+    othername:
+    attributes:
+      - brand
+      - capacity
+      - color
+    isgift: true
+  - mainname: 水杯
+    othername:
+    attributes:
+      - brand
+      - capacity
+      - color
+    isgift: true
+fixed:
+  - src: 米家保温杯蓝+保护套灰+杯刷 350ml
+    dest: 米家保温杯蓝350ml+保护套灰+杯刷
+  - src: 关注+收藏 送【杯套/刷/粉】
+    dest: fun home保温泡茶杯送【杯套/刷/粉】
+  - src: 下单立减10元【送杯刷】
+    dest: fun home保温泡茶杯送杯刷
+  - src: Fun Home保温杯
+    dest: fun home保温泡茶杯
+  - src: 泡茶杯送【黑杯套+杯刷+茶垢粉】
+    dest: fun home泡茶杯送【黑杯套+杯刷+茶垢粉】
+  - src: 泡茶杯送【灰杯套+杯刷+茶垢粉】
+    dest: fun home泡茶杯送【灰杯套+杯刷+茶垢粉】
+  - src: 泡茶杯送【粉杯套+杯刷+茶垢粉】
+    dest: fun home泡茶杯送【粉杯套+杯刷+茶垢粉】
+  - src: 泡茶杯+550ml水杯送【套/刷/粉】
+    dest: fun home泡茶杯+550ml水杯送【套/刷/粉】
+  - src: 白色 520mL
+    dest: fun home泡茶杯白色 520mL
+  - src: 520mL 白色【送杯刷】
+    dest: fun home泡茶杯520mL 白色【送杯刷】
+  - src: 520mL 白色 （送杯刷）
+    dest: fun home泡茶杯520mL 白色 （送杯刷）
+  - src: 泡茶杯520ML【送杯刷】
+    dest: fun home泡茶杯520ML【送杯刷】
+  - src: 泡茶杯+黑色杯套【送杯刷】
+    dest: fun home泡茶杯+黑色杯套【送杯刷】
+  - src: 泡茶杯+灰色杯套【送杯刷】
+    dest: fun home泡茶杯+灰色杯套【送杯刷】
+  - src: 泡茶杯+粉色杯套【送杯刷】
+    dest: fun home泡茶杯+粉色杯套【送杯刷】
+  - src: 白色520ml
+    dest: fun home泡茶杯白色520ml
+  - src: 泡茶杯+黑色杯套+杯刷+茶垢粉
+    dest: fun home泡茶杯+黑色杯套+杯刷+茶垢粉
+  - src: 泡茶杯+灰色杯套+杯刷+茶垢粉
+    dest: fun home泡茶杯+灰色杯套+杯刷+茶垢粉
+  - src: 泡茶杯+粉色杯套+杯刷+茶垢粉
+    dest: fun home泡茶杯+粉色杯套+杯刷+茶垢粉
+  - src: 泡茶杯+白轻巧杯350ML+杯刷
+    dest: fun home泡茶杯+白轻巧杯350ML+杯刷
+  - src: 泡茶杯+粉轻巧杯350ML+杯刷
+    dest: fun home泡茶杯+粉轻巧杯350ML+杯刷
+  - src: 泡茶杯+灰轻巧杯350ML+杯刷
+    dest: fun home泡茶杯+灰轻巧杯350ML+杯刷
+  - src: 泡茶杯+白随行杯550ML+杯刷
+    dest: fun home泡茶杯+白随行杯550ML+杯刷
+  - src: 泡茶杯+粉随行杯550ML+杯刷
+    dest: fun home泡茶杯+粉随行杯550ML+杯刷
+  - src: 泡茶杯+灰随行杯550ML+杯刷
+    dest: fun home泡茶杯+灰随行杯550ML+杯刷
+  - src: 泡茶杯【特价】送杯刷
+    dest: fun home泡茶杯【特价】送杯刷
+  - src: 保温泡茶杯 收藏加购送杯刷
+    dest: fun home保温泡茶杯 收藏加购送杯刷
+skufixed:
+  - shoptype: taobao
+    itemid: 598970217666
+    skuindex: 0
+    dest: fun home保温泡茶杯

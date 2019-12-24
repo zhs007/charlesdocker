@@ -1,0 +1,39 @@
+chatbotname:
+  description: chatbot name
+  other: Charles
+help001:
+  description: help 001
+  other: I am {{.ChatBotName}}, nice to meet you.
+help002:
+  description: help 002
+  other: I can make a fancy report for you.
+help003:
+  description: help 003
+  other: You can send me a markdown or excel file.
+start001:
+  description: help 001
+  other: Hey, {{.Name}}, I am {{.ChatBotName}}, nice to meet you.
+start002:
+  description: help 002
+  other: I can make a fancy report for you.
+start003:
+  description: help 003
+  other: You can send me a markdown or excel file.
+igetit:
+  description: in debug
+  other: I get it.
+yousaid:
+  description: in debug
+  other: You said "{{.TextChat}}".
+igetfile:
+  description: in debug
+  other: I get a {{.FileType}} file ({{.FileName}}), the file size is {{.FileSize}}, the file hash is "{{.FileHash}}".
+iprocok:
+  description: ada proc file ok
+  other: I am done, you can see the results at {{.Url}}.
+debugexcel:
+  description: in ada chatbot debug
+  other: |
+    The file {{.FileName}}'s active sheet is {{.CurCheet}}.{{range $val := .Columns}}{{if eq $val.Separator "" }}
+    The column {{$val.Name}}'s type is {{$val.Type}}, the type of automatic recognition is {{$val.TypeAuto}}.{{else}}
+    The column {{$val.Name}}'s type is {{$val.Type}} (separator symbol is {{$val.Separator}}), the type of automatic recognition is {{$val.TypeAuto}}.{{end}}{{end}}

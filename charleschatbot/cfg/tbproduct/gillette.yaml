@@ -1,0 +1,400 @@
+search:
+  - 吉列
+  - 剃须刀
+valuetype:
+skulist:
+  - mainname: 刀架
+    othername:
+    attributes:
+      - number
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:
+      number: 1
+  - mainname: 刀头
+    othername:
+    attributes:
+      - number
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:
+      number: 1
+  - mainname: 啫喱
+    othername:
+      - 剃须啫喱
+      - 海洋啫喱
+    attributes:
+      - weight
+      - brand
+      - capacity
+      - number
+    isgift: true
+  - mainname: 剃须泡
+    othername:
+      - 泡沫
+      - 须泡
+      - 柠檬剃须泡
+      - 柠檬须泡
+      - 柠檬泡
+    attributes:
+      - weight
+      - brand
+      - capacity
+      - number
+    isgift: true
+  - mainname: 硅胶套
+    othername:
+      - 保护套
+      - 刀架套
+    attributes:
+    isgift: true
+    ischeap: true
+  - mainname: 收纳盒
+    othername:
+      - 刀盒
+      - 刀架盒
+      - 旅行盒
+      - 剃须盒
+    attributes:
+    isgift: true
+    ischeap: true
+  - mainname: 磁吸底座
+    othername:
+      - 磁力底座
+      - 引力底座
+      - 引力座
+      - 引力盒
+    attributes:
+    isgift: false
+  - mainname: 刀架挂
+    othername:
+    attributes:
+    isgift: true
+    ischeap: true
+  - mainname: 底座
+    othername:
+      - 金属底座
+    attributes:
+    isgift: true
+    ischeap: true
+  - mainname: 洁面乳
+    othername:
+    attributes:
+      - weight
+      - brand
+      - capacity
+      - number
+    isgift: true
+fixed:
+  - src: 1刀头1刀架+刀盒【旅行装+送旅行盒！】
+    dest: 锋速三1刀头1刀架+刀盒【旅行装+送旅行盒！】
+  - src: 冰酷致护各2片
+    dest: 2冰酷刀头+2致护刀头
+  - src: 敏护1片（对应国内云感） 采购于英国
+    dest: 敏护1刀头
+  - src: 敏护4片散（对应国内云感） 采购于英国
+    dest: 敏护4刀头
+  - src: 敏护8片盒装（对应国内云感） 采购于英国
+    dest: 敏护8刀头
+  - src: 锋隐4片散
+    dest: 锋隐4刀头散
+  - src: 锋隐8片盒装
+    dest: 锋隐8刀头盒装
+  - src: 锋三8刀+刀盒【找客服免费升 5层刀片9刀1架+须泡】
+    dest: 锋速三8刀头+刀盒
+strfixed:
+  - str: 磁力底座
+    not:
+      - 致顺
+    dest: 致顺磁力底座
+  - str: 引力底座
+    not:
+      - 致顺
+    dest: 致顺引力底座
+  - str: 磁吸底座
+    not:
+      - 致顺
+    dest: 致顺磁吸底座
+  - str: 引力座
+    not:
+      - 致顺
+    dest: 致顺引力座
+  - str: （冰酷刀头
+    dest: （冰酷
+  - str: 刀头更实惠
+  - str: 高性价比替换刀头
+  - str: 【刀头】
+  - str: 刀头摆动
+  - str: 刀头不
+  - str: 全系列刀架
+  - str: 全系刀架
+  - str: 原装刀头
+  - str: 升级刀头
+  - str: 保护刀架
+  - str: 刀头】
+  - str: 无刀架
+  - str: 原装进口刀片
+  - str: 层刀片
+  - str: 不含刀架
+  - str: 原装进口刀头
+  - str: 加
+    dest: +
+  - str: 致护】
+    dest: 致护
+  - str: 50须泡
+    dest: 50g须泡
+  - str: 单刀
+    dest: 1刀头1刀架
+  - str: 引力款
+    not:
+      - 引力盒版
+      - 磁力底座
+      - 磁吸底座
+      - 引力底座
+    dest: 磁力底座
+  - str: 致顺底座版
+    dest: 致顺磁力底座版
+  - str: 含刀架底座
+  - regexp: (\d+刀头\d+刀架|\d+刀架\d+刀头)
+    and:
+      - [引力款, 引力盒版, 磁力底座, 磁吸底座, 引力底座]
+    not:
+      - 致顺
+    destformat: 致顺%s
+  - regexp: (\d+刀片|刀片\d+片)
+    destformat: 刀头%s
+  - regexp: (\d+刀头\d+刀架|\d+刀架\d+刀头)
+    and:
+      - [痘痘肌]
+    not:
+      - 云感
+    destformat: 云感%s
+  - regexp: (\d+头\d+架|\d+架\d+头)
+    strfixed:
+      - str: 头
+        dest: 刀头
+      - str: 架
+        dest: 刀架
+    destformat: '%s'
+skufixed:
+  - shoptype: taobao
+    itemid: 542873541443
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+  - shoptype: taobao
+    itemid: 540791412062
+    skuindex: -1
+    attributes:
+      productmodel: 威锋
+  - shoptype: taobao
+    itemid: 530418604237
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+  - shoptype: tmall
+    itemid: 601066450575
+    skuindex: -1
+    attributes:
+      productmodel: 云感
+  - shoptype: taobao
+    itemid: 561659473686
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+  - shoptype: taobao
+    itemid: 45454777260
+    skuindex: -1
+    strfixed:
+      - regexp: (\d+刀头\d+刀架|\d+刀架\d+刀头)
+        and:
+          - [底座]
+        not:
+          - 致顺
+        destformat: 致顺%s
+  - shoptype: taobao
+    itemid: 600623385710
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+    strfixed:
+      - str: 底座
+        not:
+          - 磁力
+        dest: 磁力底座
+      - regexp: (\d+刀头\d+刀架|\d+刀架\d+刀头)
+        and:
+          - [底座]
+        not:
+          - 致顺
+        destformat: 致顺%s        
+  - shoptype: tmall
+    itemid: 528413752789
+    skuindex: -1
+    attributes:
+      productmodel: 锋速
+  - shoptype: taobao
+    itemid: 529734810297
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+  - shoptype: tmall
+    itemid: 600626280070
+    skuindex: -1
+    attributes:
+      productmodel: 云感
+  - shoptype: taobao
+    itemid: 548549947061
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+    strfixed:
+      - str: 底座
+        not:
+          - 磁力
+        dest: 磁力底座
+      - regexp: ((白|黑)色(\d+刀头\d+刀架|\d+刀架\d+刀头))
+        and:
+          - [磁力底座]
+        not:
+          - 致顺
+        destformat: 致顺%s
+  - shoptype: tmall
+    itemid: 39263857107
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+  - shoptype: taobao
+    itemid: 43191553388
+    skuindex: -1
+    attributes:
+      productmodel: 锋隐
+  - shoptype: tmall
+    itemid: 521254954261
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 锋隐致顺套装
+        not:
+        dest: 锋隐致顺1刀架+5刀头+刀盒
+  - shoptype: tmall
+    itemid: 579346486223
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 锋隐致顺尊享装+硅胶套
+        not:
+        dest: 致顺1刀架1刀头+70g啫喱+硅胶套
+  - shoptype: tmall
+    itemid: 43860520357
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 锋隐致顺尊享装
+        not:
+        dest: 致顺1刀架1刀头+70g啫喱
+  - shoptype: tmall
+    itemid: 44050092174
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 锋隐致顺尊享装+硅胶套
+        not:
+          - 刀
+        dest: 锋隐致顺1刀架1刀头+70g啫喱+硅胶套
+  - shoptype: taobao
+    itemid: 583310785020
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 底座限量版+
+        and:
+          - [致顺]
+        dest: 1刀架1刀头+磁力底座
+      - str: 限量版
+        and:
+          - [致护]
+        not:
+          - 刀头
+        dest: 1刀架4刀头+底座+70g啫喱
+  - shoptype: tmall
+    itemid: 592183666057
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 磁力底座
+        and:
+          - [致顺]
+        not:
+          - 刀
+        dest: 1刀架1刀头+磁力底座
+      - str: 底座版1+
+        and:
+          - [致顺]
+        dest: 1刀架1刀头+磁力底座+
+  - shoptype: tmall
+    itemid: 39269272618
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 刀
+        not:
+          - 刀头
+          - 刀架
+        dest: 刀头
+      - str: 架
+        not:
+          - 刀头
+          - 刀架
+        dest: 刀架
+      - str: 头
+        not:
+          - 刀头
+        dest: 刀头
+  - shoptype: taobao
+    itemid: 599768477325
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 1刀架
+        and:
+          - [磁力底座]
+        dest: 致顺1刀架
+      - str: 1刀头
+        and:
+          - [磁力底座]
+        dest: 致顺1刀头
+  - shoptype: tmall
+    itemid: 15615839338
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 1刀架
+        and:
+          - [磁力底座]
+        dest: 致顺1刀架
+      - str: 底座
+        and:
+          - [致顺]
+        not:
+          - 磁力
+        dest: 磁力底座
+  - shoptype: tmall
+    itemid: 521957482968
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 1刀架1刀+
+        not:
+        dest: 1刀架1刀头+
+  - shoptype: taobao
+    itemid: 573722707027
+    skuindex: -1
+    attributes:
+    strfixed:
+      - str: 底座限量版+
+        dest: 致顺磁力底座版1刀头1刀架+
+# product model 状态，main表示主要的产品共一个productmodel
+productmodelstate: cross.main
