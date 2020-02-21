@@ -1,0 +1,93 @@
+# 颜色
+color:
+  - 酒红色
+  - 荧光绿
+  - 深卡其布色
+  - 卡其布色
+  - 深酒红色
+  - 酒红色
+  - 巧克力色
+  - 浅灰色
+  - 明黄色
+  - 米白色
+  - 玫红色
+  - 酒红色
+  - 姜黄色
+  - 湖蓝色
+  - 黑灰色
+  - 黑
+  - 灰
+  - 粉
+  - 青
+  - 白色
+  - 黑色
+  - 灰色
+  - 粉色
+  - 蓝
+
+# 品牌名
+brand:
+  - mainname: 膳魔师
+    othername:
+      - 膳mo师
+  - mainname: fun home
+    othername:
+      - funhome
+      - fun home
+  - mainname: 平仄
+    othername:
+      - pinztea
+  - mainname: 米家
+    othername:
+      - 小米
+  - mainname: 吉列
+    othername:
+      - gillette
+  - mainname: 维达
+    othername:
+      - vinda    
+
+# 品牌配置文件目录
+brandpath: ./brand
+
+# 物流
+logistics:
+  - 顺丰包邮
+  - 顺丰
+  - 包邮
+
+# 停用词，无意义的词
+stopwords:
+  - 现货
+  - 特价
+  - 收藏
+  - 加购
+  - （
+  - ）
+  - '-'
+
+# 分隔词，左右获取属性时，尽量的不要跨过这些词
+separator:
+  - 送
+  - 【
+  - 】
+  - +
+  - /
+
+# 英文数字加这些字符，组成扩展的英文数字
+letterdigitex: "'&#@$%"
+
+# 包，一般用于纸巾
+bao:
+  regexp: 
+    - ([\d]{1,})包
+
+# 抽，一般用于纸巾
+chou:
+  regexp: 
+    - ([\d]{1,})抽
+
+# 层，一般用于纸巾
+ceng:
+  regexp: 
+    - ([\d]{1,})层

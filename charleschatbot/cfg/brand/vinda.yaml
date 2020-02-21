@@ -1,0 +1,43 @@
+brand: 维达
+productmodel:
+  - mainname: 细韧
+    othername:
+  - mainname: 超韧
+    othername:
+  - mainname: 绵柔
+    othername:
+  - mainname: 棉韧
+    othername:
+      - 棉韧立体美
+      - 立体美
+  - mainname: 婴儿
+    othername:
+      - 婴幼儿
+ruleremove:
+  - text: 婴儿
+    exclude:
+      - 细韧
+      - 超韧
+      - 绵柔
+      - 棉韧
+      - 立体美
+  - text: 婴幼儿
+    exclude:
+      - 细韧
+      - 超韧
+      - 绵柔
+      - 棉韧
+      - 立体美
+idcode:
+  - name: vindatype
+    regexp:
+      - (v[\d]{4})\D|(v[\d]{4})$
+      - \D([\d]{4})\D|\D([\d]{4})$|^([\d]{4})
+# 停用词，无意义的词
+stopwords:
+  - （
+  - ）
+  - '-'
+  - (
+  - )
+  - ','

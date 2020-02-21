@@ -16,7 +16,10 @@ tokens:
   - uiPobCUJ0kXwonOm
 
 # configuration for jccclient
-jccclient: ./config/jccclient.yaml  
+jccclient: ./config/jccclient.yaml
+
+# path for template
+tmplpath: ./cfg/tmpl
 
 # plugins
 plugins:
@@ -29,3 +32,8 @@ plugins:
 pluginscfg:
   alimama: ./cfg/alimama.yaml
   steepandcheap: ./cfg/steepandcheap.yaml
+
+# configuration for Ada
+ada:
+  servaddr: 127.0.0.1:7201
+  token: 123456

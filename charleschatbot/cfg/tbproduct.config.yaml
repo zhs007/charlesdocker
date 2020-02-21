@@ -1,4 +1,4 @@
 # 相对本文件的相对目录
 productpath: ./tbproduct
 brandpath: ./brand
-dict: ./dict.yaml
+dict: ./dict2.yaml

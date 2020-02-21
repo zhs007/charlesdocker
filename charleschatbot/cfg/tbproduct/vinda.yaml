@@ -1,0 +1,65 @@
+search:
+  - 维达
+  - 纸巾
+valuetype:
+skulist:
+  - mainname: 细韧
+    othername:
+    attributes:
+      - chen
+      - chou
+      - bao
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:
+  - mainname: 超韧
+    othername:
+    attributes:
+      - chen
+      - chou
+      - bao
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:
+  - mainname: 绵柔
+    othername:
+    attributes:
+      - chen
+      - chou
+      - bao
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:
+  - mainname: 婴儿
+    othername:
+    attributes:
+      - chen
+      - chou
+      - bao
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:
+  - mainname: 立体美
+    othername:
+    attributes:
+      - chen
+      - chou
+      - bao
+      - productmodel
+    requiredattr:
+      - productmodel
+    defaultattr:    
+fixed:
+strfixed:
+skufixed:
+# product model 状态，main表示主要的产品共一个productmodel
+productmodelstate: cross.main
+props:
+  - 层数
+  - 抽数
+  - 型号
+  - 包数

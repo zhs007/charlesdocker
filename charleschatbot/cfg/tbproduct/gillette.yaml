@@ -229,7 +229,7 @@ skufixed:
           - [底座]
         not:
           - 致顺
-        destformat: 致顺%s        
+        destformat: 致顺%s
   - shoptype: tmall
     itemid: 528413752789
     skuindex: -1
@@ -398,3 +398,4 @@ skufixed:
         dest: 致顺磁力底座版1刀头1刀架+
 # product model 状态，main表示主要的产品共一个productmodel
 productmodelstate: cross.main
+props:
