@@ -1,0 +1,24 @@
+# {{.Title}}
+
+$$ada.dataset$$
+name: searchds
+data:
+  head: ['SearchID', 'Text']
+  data:
+{{range .LstSearch -}}
+{{$cursearch := .}}    - [{{.SearchID}}, '{{.Products.Text}}']
+{{end -}}
+$$ada.dataset$$
+
+$_$
+
+$$ada.table2$$
+ id: searchtable
+ datasetname: searchds
+ tablehead: head
+ tablebody: data
+$$ada.table2$$
+
+-=搜索列表=-
+
+这份报表生成于 {{.CurTime}} 。

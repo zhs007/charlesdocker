@@ -1,0 +1,114 @@
+# {{.Title}}
+
+前段时间，想买个泡茶杯。  
+要求比较简单：
+
+- 可以放车上，不要把手什么的。
+- 需要可以茶水分离的，因为喝白水不太习惯，总喜欢泡点啥。
+- 密封性能好点，不要漏水。
+- 一定的保温能力。
+- 最好不要有防腐涂层什么的。
+
+然后，在网上搜了一下，最终还是选择了一款小米有品的保温杯。  
+
+比较简洁的一款保温杯，但茶水分离，方便泡茶，然后呢，内壁是不锈钢316。  
+关于不锈钢304和316，其实主要的差别就是316的抗腐蚀性更强一些（添加了钼），当然，其实一般使用上，2者应该差别不大。  
+茶仓是Tritan材质的，这种材质也是很多塑料制品吹捧的（最近买的手机壳，也拿这个材料来吹嘘......）。  
+
+小米有品上，还有一款类似的杯子，是平仄Pinztea的保温杯（他们家还有一款类似的随行杯）。  
+Pinztea的保温杯，参数上要差一些，内壁是不锈钢304的。  
+Pinztea的随行杯呢，茶仓是玻璃的。  
+
+总体来说，FunHome保温杯是目前综合考虑下来觉得最合适的一款泡茶杯了。
+
+杯子到手以后，材料和做工感觉还好，但设计细节上还是有些欠缺：
+- 杯体和茶仓因为材质不同，膨胀系数不同，而且泡茶时，杯子是倒过来，所以如果扭得太紧，泡茶一段时间以后，会很难打开（其实不用扭太紧，杯子密封性还是挺好的，扭到刚到位即可）。
+- 茶仓里多少会有些空气，所以盖杯盖时，切记要先打开上盖，盖茶仓，再盖上盖。
+
+$$ada.dataset$$
+name: shopds
+data:
+  head: ['店铺名', '店铺类型']
+  data:
+{{range .ShopStats.FinalShopList -}}  
+{{$curshop := .}}    - ['{{.AlimamaShop.Name}}', {{.ShopType}}]
+{{end -}}
+$$ada.dataset$$
+
+$_$
+
+$$ada.table2$$
+ id: shoptable
+ datasetname: shopds
+ tablehead: head
+ tablebody: data
+$$ada.table2$$
+
+-=店铺统计表=-
+
+$_$
+
+{{$GetProductInfoTitle := .GetProductInfoTitle}}
+{{$GetProductInfoPrice := .GetProductInfoPrice}}
+{{$GetSkuGroupSkuNums := .GetSkuGroupSkuNums}}
+{{$GetSkuObjNumber := .GetSkuObjNumber}}
+{{$CountPrice := .CountPrice}}
+
+$$ada.dataset$$
+name: groupds
+data:
+  head: ['商品种类', 'sku数量']
+  data:
+{{range .LstGroups -}}  
+{{$curgroup := .}}    - ['{{.Name}}', {{len .Products}}]
+{{end -}}
+$$ada.dataset$$
+
+$_$
+
+$$ada.table2$$
+ id: grouptable
+ datasetname: groupds
+ tablehead: head
+ tablebody: data
+$$ada.table2$$
+
+-=商品种类统计表=-
+
+{{range $gi, $cg := .LstGroups}}
+{{.Name}}
+
+{{if (eq (call $GetSkuGroupSkuNums .) 1)}}
+$$ada.dataset$$
+name: groupskuds_{{$gi}}
+data:
+  head: ['商品', '总价', '数量', '单价']
+  data:
+{{range .Products -}}  
+{{$cp := call $GetProductInfoPrice .}}{{$cn := call $GetSkuObjNumber . 0}}    - ['{{call $GetProductInfoTitle .}}', {{$cp}}, {{$cn}}, {{call $CountPrice $cp $cn}}]
+{{end -}}
+$$ada.dataset$$
+
+{{else}}
+$$ada.dataset$$
+name: groupskuds_{{$gi}}
+data:
+  head: ['商品', '总价']
+  data:
+{{range .Products -}}  
+{{$cp := call $GetProductInfoPrice .}}{{$cn := call $GetSkuObjNumber . 0}}    - ['{{call $GetProductInfoTitle .}}', {{$cp}}]
+{{end -}}
+$$ada.dataset$$
+
+{{end}}
+
+$$ada.table2$$
+ id: grouptable_{{$gi}}
+ datasetname: groupskuds_{{$gi}}
+ tablehead: head
+ tablebody: data
+$$ada.table2$$
+
+-={{.Name}}统计表=-
+
+{{end}}
