@@ -1,4 +1,5 @@
 FROM alpine:latest
 RUN apk --no-cache add tzdata ca-certificates libc6-compat libgcc libstdc++
 COPY ./charleschatbot /app/charleschatbot
+WORKDIR /app/charleschatbot
 CMD ["./charleschatbot"]
