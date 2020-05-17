@@ -39,3 +39,4 @@ chatbotnametext: chatbotname
 language: en
 
 langpath: ./cfg/lang
+tasklogsurl: https://charlestasks.heyalgo.io
