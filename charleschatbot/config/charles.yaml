@@ -44,3 +44,5 @@ tasklogspath: ./tasklogs
 isinitjieba: true
 # Does it call initOpenCC
 openccpath: ./cfg/opencc
+# api serv bind address
+apiserv: :7206
