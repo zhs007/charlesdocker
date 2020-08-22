@@ -28,3 +28,9 @@ regtask001:
 regtask002:  
   description: regtask 002
   other: 任务已经开始（{{.CmdLine}}）。  
+settimer001:  
+  description: settimer 001
+  other: 我知道了 ({{.TextChat}}).
+settimer002:  
+  description: settimer 002
+  other: 计时任务（{{.CmdLine}}）。    

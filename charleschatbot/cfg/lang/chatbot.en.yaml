@@ -24,7 +24,13 @@ igetfile:
   other: I get a {{.FileType}} file ({{.FileName}}), the file size is {{.FileSize}}, the file hash is "{{.FileHash}}".
 regtask001:  
   description: regtask 001
-  other: I get it.
+  other: I get it ({{.TextChat}}).
 regtask002:  
   description: regtask 002
   other: The task is starting ({{.CmdLine}}).
+settimer001:  
+  description: settimer 001
+  other: I get it ({{.TextChat}}).
+settimer002:  
+  description: settimer 002
+  other: The timer is staring ({{.CmdLine}}).
