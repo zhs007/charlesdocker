@@ -33,4 +33,4 @@ settimer001:
   other: I get it ({{.TextChat}}).
 settimer002:  
   description: settimer 002
-  other: The timer is staring ({{.CmdLine}}).
+  other: The timer is staring ({{.Task}}).
