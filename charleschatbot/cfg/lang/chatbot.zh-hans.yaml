@@ -24,9 +24,6 @@ igetfile:
   other: 我收到了一个 {{.FileType}} 文件 ({{.FileName}})，文件大小是 {{.FileSize}}，文件Hash是 "{{.FileHash}}"。
 regtask001:  
   description: regtask 001
-  other: 我知道了 ({{.TextChat}}).
-regtask002:  
-  description: regtask 002
   other: 任务已经开始（{{.CmdLine}}）。  
 settimer001:  
   description: settimer 001
